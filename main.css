@@ -194,7 +194,6 @@ li{
 .landing-text h6{
   font-size: 2rem;
   font-weight: 400; 
-  padding-bottom: 100px;
 }
 /*End header*/
 
@@ -442,9 +441,36 @@ li{
     box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
   }
 }
-
+.video-element{
+  width: 100%;
+}
+.viewResumeButton{
+  display: inline-block;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #3883ff;
+  transition: color 650ms;
+  font-weight: 600;
+}
+.viewResumeButton:hover{
+  color: #2f67cd;
+}
+.video_container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.videoInContainer{
+  margin-right: 50px;
+}
 @media screen and (max-width: 768px)
 {
+  .video_container{
+    flex-direction: column;
+    margin-right: 0px;
+    display: none;
+  }
     body{
     background: url("images/sitebg.jpg") no-repeat center fixed;
     background-size: cover;
